@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>time converter</title>
+</head>
+<body><br><br>
+  <center><h1>time converter</h1>
+    <table>
+    <tr>
+      <th style="background-color: purple;"> days
+        <center><p><input type="text" name="days"></p>
+          <input type="button" class="btn btn-primary" onClick="DtSec()" name="day to seconds">
+          <input type="button" class="btn btn-primary" onClick="Dtmin()" name="day to minutes">
+          <input type="button" class="btn btn-primary" onClick="DtHr()" name="day to hours">   
+      </th>
+    </tr>
+    </table>
+    </body>
+<script>
+  function DtSec(){
+    var x, y
+    x = (document.getElementById('Day To Seconds').value);
+    y = 86400;
+    alert(x * y)
+  }
+    function DtMin(){
+      var x, y
+      x = (document.getElementById('Day To Minutes').value);
+      y = 1440;
+      alert(x * y);
+    }
+
+    function DtHr(){
+      var x, y
+      x = (document.getElementById('Day To Hours').value);
+      y = 24;
+      alert(x * y)
+    } 
+</script>
+
+</html>
